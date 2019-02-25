@@ -4,11 +4,11 @@
    */
   class Conection
   {
-    private $host = "%host%";
-  	private $port = "%port%";
+    private $host = "127.0.0.1";
+  	private $port = "3306";
   	private $db = "%base%";
-  	private $user = "%user%";
-  	private $pass = "%pass%";
+  	private $user = "root";
+  	private $pass = "123";
     private $mysqli = NULL;
 
     function __construct()

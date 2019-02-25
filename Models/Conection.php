@@ -6,7 +6,7 @@
   {
     private $host = "127.0.0.1";
   	private $port = "3306";
-  	private $db = "%base%";
+  	private $db = "#base#";
   	private $user = "root";
   	private $pass = "123";
     private $mysqli = NULL;

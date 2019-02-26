@@ -33,7 +33,7 @@ class Home extends Main {
 		$productos->deleteRow("id=\"2\"");
 
 		echo "<br><br>";
-		echo "Select con borrado de id y actualizado ";
+		echo "Select con borrado de id 2 y actualizado id 1 a 5 ";
 		echo "<br>";
 		echo $productos->findAll();
 

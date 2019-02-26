@@ -1,7 +1,7 @@
 <?php
 
 require 'Main.php';
-require 'Models/Catalogo.php';
+require 'Models/productos.php';
 
 class Home extends Main {
 
@@ -15,34 +15,28 @@ class Home extends Main {
 
 	public function testORM()
 	{
-		$catalogo = new Catalogo();
+		$productos = new productos();
+        
+        $productos->insert("1");
+		$productos->insert("2");
+		$productos->insert("3");
 
-		echo "Select all: (Antes)";
+		echo "Select sin borrar";
 		echo "<br>";
-		echo $catalogo->findAll();
+		echo $productos->findAll();
 
-		echo "<br>";
-		echo "Select specific";
-		echo "<br>";
-		echo $catalogo->findColumn("id");
 
-		$catalogo->insert("1","uno");
-		$catalogo->insert("2","dos");
-		$catalogo->insert("3","tres");
+		
 
-		$catalogo->updateRow("descripcion","Cambio","id=\"1\" AND descripcion = \"uno\"");
+		$productos->updateRow("id","5","id=\"1\"");
 
-		$catalogo->deleteRow("id=\"2\"");
+		$productos->deleteRow("id=\"2\"");
 
 		echo "<br><br>";
-		echo "Select all: (Despues)";
+		echo "Select con borrado de id y actualizado ";
 		echo "<br>";
-		echo $catalogo->findAll();
+		echo $productos->findAll();
 
-		echo "<br>";
-		echo "Select specific (Despues)";
-		echo "<br>";
-		echo $catalogo->findColumn("descripcion");
 	}
 }
 ?>

@@ -1,9 +1,5 @@
 <html lang="es">
     
-    <style type="text/css">
-html,body { 
-  overflow:hidden; 
-}
 </style>
 	<head>
                 <meta http-equiv="content-type" content="text/html; charset=utf-8" />

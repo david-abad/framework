@@ -4,13 +4,13 @@
   /**
    *
    */
-  class #tableName# extends Model
+  class #tablename# extends Model
   {
     //Establece las variables de
     //la super clase Model
     function __construct()
     {
-      $this->table = "#tableName#";
+      $this->table = "#tablename#";
   	  $this->columns = #columns#;
     }
   }
